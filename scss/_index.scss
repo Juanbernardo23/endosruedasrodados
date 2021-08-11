@@ -1,0 +1,273 @@
+$titulos: 3em;
+$negrita: bold;
+
+@mixin posicion{
+  position: relative;
+  top: -1.5vh;
+}
+
+@mixin posicionDos{
+  position: relative;
+  top: -1.5vh;
+}
+
+/*pagina principal*/
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: linear-gradient(to top, #6abcff 0%, #bdd8ee 100%);
+  }
+  
+  a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: -1vh;
+  }
+  
+  header {
+    background: url(../img/banner.jpg);
+    height: 100vh;
+    background-size: cover;
+    margin: auto;
+  }
+  
+  .navegacion a{
+    position: relative;
+    top: -28vh;
+    right: 80vh;
+    color: #fff;
+    background-color: #2513ce3b;
+    padding: 0.25em 0.25em;
+    font-size: 0.75em;
+  }
+  
+  .titularGrande{
+    text-align: center;
+    margin-top: 30vh;
+    letter-spacing: 2px;
+    animation-name: titularHeader;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+  }
+  
+  @keyframes titularHeader{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 100;
+    }
+  }
+  
+  .titularGrande h1{
+    text-transform: uppercase;
+    font-size: $titulos;
+    font-style: italic;
+    width: 70%;
+    margin: auto;
+    color: rgb(50, 6, 211);
+    background-color: #fff;
+    margin-bottom: 60px;
+    animation-name: titularAnimado;
+  }
+  
+  .botonHeader:hover{
+    transform: scale(1.1, 1.1);
+  }
+  
+  .botonHeader a:hover{
+    color: #fff;
+  }
+  
+  .botonHeader{
+    text-align: center;
+  }
+  
+  .secciones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px; }
+  
+  .columnasTitulo {
+    font-size: $titulos;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: $negrita; }
+  
+  .seccionesDiv h3 {
+    font-weight: $negrita; }
+  
+  .seccionesDiv {
+    width: 30%; }
+  
+  .seccionesDiv img {
+    width: 100%; }
+  
+  .seccionesDiv p {
+    font-size: 14px;
+    line-height: 24px; }
+  
+  .bloqueUnoContainer {
+    margin-top: 5%;
+    display: flex; }
+  
+  .bloqueUnoContainer h2 {
+    font-weight: $negrita; }
+  
+  .bloqueUnoContainer img {
+    width: 40%;
+    margin-left: 2% }
+  
+  .bloqueUnoTexto{
+    text-align: center;
+    width: 50%;
+    margin-left: 4%; }
+  
+  .bloqueUnoTexto p {
+    text-align: center; }
+  
+  .bloqueUnoTexto a{
+    background-color: #7389e9;
+    color: #fff;
+    padding: 20px 40px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4%; }
+  
+    
+  .bloqueUnoBoton:hover{
+    transform: scale(1.1, 1.1);
+    color: #fff;
+  }
+
+
+  .bloqueUnoBoton a:hover{
+    color: #fff;
+  }
+  
+  #galleryContainer {
+    margin-top: -12vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5%;
+    padding-bottom: 5%;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    border: rgba(50, 6, 211, 0.151) 2px solid; }
+  
+  .fotoGallery img {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 50px; }
+  
+  .h2{ 
+    color: #000;
+    font-size: 45px;
+    word-spacing: 15px;
+    font-weight: $negrita;
+    text-align: center;
+    margin-top: 3%;
+  }
+  
+  #nuevosIngresos{
+    margin-bottom: 0%;
+    padding: 20px 20px;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .badge-secondary{
+    color: rgb(243, 0, 0);
+  }
+  
+  #carouselExampleIndicators{
+    background-color: #fff;
+  }
+  
+  .carousel-inner img{
+    margin-left: 20%;
+  }
+  
+  #contactanos{
+    text-align: center;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  
+  .infoContacto p{
+    text-align: center;
+    word-spacing: 10vh;
+    font-weight: $negrita;
+    font-style: italic;
+  }
+
+
+  .imagenesContacto{
+    display: flex;
+  }
+  
+  .imagenesContacto #mail{
+    position: relative;
+    left: 42.5%;
+    bottom: 8.5vh;
+  }
+  
+  .imagenesContacto #telefono{
+    position: relative;
+    left: 31.5%;
+    bottom: 8.5vh;
+  }
+  
+  #contactanos h3{
+    text-align: center;
+    font-weight: $negrita;
+    font-style: italic;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .botonContacto:hover{
+    transform: scale(1.1, 1.1);
+  }
+  
+  .botonContacto a:hover{
+    color: #fff;
+  }
+  
+  #footerPage{
+    background-color: #9face6;
+    padding: 5px;
+    font-size: 12px;
+  }
+  
+  #footerPage p{
+    margin-top: 1%;
+    margin-bottom: -1%;
+  }
+  
+  .redsocialuno{
+    width: 2%;
+    @include posicionDos;
+    left: 2.8%;
+  }
+  
+  .redsocialdos{
+    width: 2%;
+    @include posicionDos;
+    left: 20.2%;
+  }
+  
+  #insta{
+    @include posicion;
+    left: 35%;
+  }
+  
+  #faceb{
+    @include posicion;
+    left: 40%;
+  }

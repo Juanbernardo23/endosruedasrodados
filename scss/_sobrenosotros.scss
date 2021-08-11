@@ -1,0 +1,113 @@
+$titulares: 2em;
+
+/*sobre nosotros*/ 
+  
+  .sobreNosotros{
+    padding: 20px;
+  }
+  
+  .sobreNosotros img{
+    position: relative;
+    top: 5vh;
+    bottom: 5vh;
+  }
+  
+  .imagenMap{
+    animation-name: imagenUno;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+  }
+  
+  @keyframes imagenUno{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 100;
+    }
+  }
+  
+  .sobreNosotros h2{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #23557e;
+    padding: 10px 10px;
+    margin-top: 3%;
+  }
+  
+  .sobreNosotros h3{
+    position: relative;
+    font-size: $titulares;
+    font-weight: bold;
+    width: 50%;
+    left: 50%;
+    bottom: 80vh;
+  }
+  
+  .sobreNosotros p{
+    position: relative;
+    width: 50%;
+    left: 50%;
+    bottom: 70vh;
+  }
+  
+  .seccionDos h4{
+    text-align: center;
+    padding: 2%;
+    position: relative;
+    bottom: 50vh;
+    font-size: $titulares;
+    font-weight: bold;
+  }
+  
+  .seccionDos p{
+    position: relative;
+    bottom: 105vh;
+    padding: 2%;
+    width: 40%;
+  }
+  
+  .seccionDos img{
+    animation-name: imagenDos;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    position: relative;
+    bottom: 40vh;
+    left: 50%;
+    width: 40%;
+  }
+  
+  @keyframes imagenDos{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 100;
+    }
+  }
+  
+  h5{
+    position: relative;
+    left: 2%;
+    top: -90vh;
+    width: 90%;
+    font-size: 23px;
+    color: #fff;
+    background-color: #23557e;
+    padding: 10px 10px;
+    margin-bottom: -80vh;
+  }
+  
+  iframe{
+    margin: 20px;
+    width: 50%;
+    margin-left: 25%;
+  }
+  #textoUno{
+    margin: 20px 20px;
+    margin-bottom: 10%;
+    font-size: 14px;
+  }
+  
