@@ -289,7 +289,7 @@ header {
   animation-timing-function: ease-in;
   animation-duration: 2s;
   position: relative;
-  bottom: 40vh;
+  bottom: 48vh;
   left: 50%;
   width: 40%; }
 
@@ -463,7 +463,7 @@ iframe {
     font-size: 2.25em;
     font-weight: bolder;
     margin-top: 2%;
-    margin-bottom: 2%; }
+    margin-bottom: 8%; }
   .bloqueUnoContainer {
     display: inline-block; }
   .bloqueUnoTexto {
@@ -541,7 +541,8 @@ iframe {
     margin-bottom: -8%; }
   .seccionDos img {
     width: 90%;
-    left: 5%; }
+    left: 5%;
+    margin-top: 15%; }
   #textoUno {
     font-size: 1.5em; }
   .seccionDos h4 {
@@ -568,7 +569,9 @@ iframe {
     padding: 16px 10px;
     width: 20%; }
   input {
-    width: 50%; }
+    width: 90%; }
+  textarea {
+    max-width: 16rem; }
   /**contacto**/
   .tituloContacto {
     font-size: 2em;
@@ -647,8 +650,6 @@ iframe {
     color: #fff;
     background-color: #23557e; }
   /*micuenta*/
-  input {
-    width: 50%; }
   .iniciarSesion a {
     top: 20%; }
   .iniciarSesion {
@@ -656,8 +657,8 @@ iframe {
     height: 40%; }
   .nuevoUsuario {
     top: 80vh;
-    left: 25vh;
-    width: 50%;
+    left: 32vh;
+    width: 40%;
     height: 40%; }
   .listaGrande {
     position: relative;
@@ -757,11 +758,22 @@ iframe {
     font-size: 13px;
     line-height: 10%;
     width: 80%; }
+  .nuevoUsuario {
+    top: 80vh;
+    left: 27vh;
+    width: 50%;
+    height: 40%; }
+  input {
+    width: 50%; }
   label {
-    font-size: 1em; }
+    font-size: 1em;
+    width: 70%; }
+  .iniciarSesion {
+    width: 70%; }
   .iniciarSesion a {
-    top: 7%;
-    padding: 10px 10px; } }
+    padding: 10px 10px;
+    top: 30%;
+    right: 40%; } }
 
 /*contacto*/
 h2 {
@@ -784,6 +796,9 @@ p {
   padding: 10px 10px;
   text-decoration: none;
   display: inline-block; }
+
+textarea {
+  width: 16rem; }
 
 .botonEnviar:hover {
   color: #fff; }
